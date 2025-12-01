@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER (same as your index.html) -->
+<header class="main-header">
+    <div class="left-section">
+        <div class="logo-box">HP</div>
+        <div class="left-text">
+            <h1>HP</h1>
+            <p>PRINTER SUPPORT & SOLUTIONS</p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html"><strong>Home</strong></a>
+        <a href="products.html"><strong>Products</strong></a>
+        <a href="#"><strong>Support</strong></a>
+        <a href="#"><strong>Contact</strong></a>
+    </nav>
+
+    <div class="right-section">
+        <button class="blue-btn">us 1-855-690-8080</button>
+        <a href="cart.html" class="cart-link">
+            <img src="images/cart-icon.webp" class="shop-icon" alt="Shop">
+            <span class="cart-count" id="cart-count">0</span>
+        </a>
+    </div>
+</header>
+
+<!-- CART PAGE -->
+<section class="cart-page">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-total">
+        <h3>Total: $<span id="total-price">0</span></h3>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+</section>
+
+<script src="cart.js"></script>
+</body>
+</html>

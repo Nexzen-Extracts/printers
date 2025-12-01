@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Section</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body{
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        background-color:#f9f9f9
+      }
+        .main-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .main-section h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+            color:black;
+        }
+
+        .main-section p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .three-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            text-align:center;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 80px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #1a73e8;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size:14px;
+        }
+
+        .card button {
+               background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #155bb5;
+        }
+
+        @media (max-width: 1000px) {
+            .three-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<header class="main-header">
+    <div class="left-section">
+        <a href="index.html"><div class="logo-box">HP</div></a>
+
+        <div class="left-text">
+            <h1>HP</h1>
+            <p>PRINTER SUPPORT & SOLUTIONS</p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#"><strong>Home</strong></a>
+        <a href="#"><strong>Products</strong></a>
+        <a href="support.html"><strong>Support</strong></a>
+        <a href="contact.html"><strong>Contact</strong> </a>
+    </nav>
+
+    <div class="right-section">
+        <button class="blue-btn">us 1-855-690-8080</button>
+        <a href="cart.html" class="cart-link">
+            <img src="images/cart-icon.webp" class="shop-icon" alt="Shop">
+            <span class="cart-count" id="cart-count">0</span>
+        </a>
+    </div>
+    
+</header>
+<div class="mini-header">
+    <div class="mini-item">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mini-icon" viewBox="0 0 24 24">
+            <path fill="#2563eb" d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-7h-1V7a5 5 0 0 0-10 0v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zm-8-3a3 3 0 0 1 6 0v3h-6V7z"/>
+        </svg>
+        Secure Shopping
+    </div>
+
+    <div class="mini-item">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mini-icon" viewBox="0 0 24 24">
+            <path fill="#2563eb" d="M2 6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v9H2V6z"/>
+            <path fill="#2563eb" d="M14 11h4l3 4v4h-7v-8z"/>
+            <circle cx="5" cy="18" r="2" fill="#2563eb"/>
+            <circle cx="17" cy="18" r="2" fill="#2563eb"/>
+        </svg>
+        Free Shipping Over $100
+    </div>
+
+    <div class="mini-item">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mini-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="#2563eb" stroke-width="2"/>
+            <text x="12" y="16" font-size="12" text-anchor="middle" fill="#2563eb" font-family="Arial" font-weight="bold">$</text>
+        </svg>
+        30-Day Money Back
+    </div>
+</div>
+    <section class="main-section">
+        <h1>Customer Support</h1>
+        <p>We're here to help! Find answers to common questions, download resources, or<br> contact our expert support team for personalized assistance.</p>
+
+        <div class="three-cards">
+            <div class="card">
+                <img src="images/phone.PNG" alt="Image 1">
+                <h3>Phone Support</h3>
+                <p>Speak directly with our printer experts</p>
+                <p style="color:black;"><strong>🇺🇸
+1-855-690-4040</strong></p>
+<p style="color:black;">Monday-Friday: 8AM-8PM EST</p>
+<p style="color:black;">Saturday: 9AM-5PM EST</p>
+                <a href="#">Average wait time: 2 minutes</a>
+                
+            </div>
+            <div class="card">
+                <img src="images/mail.PNG" alt="Image 2">
+                <h3>Live Chat</h3>
+                <p style="color:black;">Get instant help from our support team</p>
+                <p style="color:black;">Available during business hours</p>
+                <p style="color:black;">Average response time: 30 seconds</p>
+               
+                <button>Start Chat</button>
+            </div>
+            <div class="card">
+                <img src="images/message.PNG" alt="Image 3">
+                <h3>Email Support</h3>
+                <p >Send us detailed questions or issues</p>
+                <p style="color:black;"><strong>support@printerhub.com</strong></p>
+                <p style="color:black;">Response within 24 hours</p>
+                <p style="color:black;">Include order number for faster service</p>
+               
+            </div>
+        </div>
+    </section>
+<section style="max-width: 1200px; margin: 50px auto; padding: 20px;">
+        <h1 style="text-align: left; font-size: 26px; color:black; margin-bottom: 40px;">Support Categories</h1>
+
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <!-- First Sub-section -->
+            <div style="background-color: #fff; flex: 1; min-width: 300px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <img src="images/1.PNG" alt="Logo 1" style="width:70px; height:60px; margin-right: 15px;">
+                    <h2 style="font-size: 20px; color: black; margin: 0;">Setup & Installation</h2>
+                </div>
+                <p style="font-size: 16px; color: #555; margin-bottom: 15px;">Get help setting up your new printer</p>
+                <ul style="list-style: disc inside; padding-left: 0; color:#555;font-size:14px;">
+                    <li>Initial Setup</li>
+                    <li>Driver Installation</li>
+                    <li>Network Configuration</li>
+                    <li>Point 4 about the topic</li>
+                    <li>Mobile Setup</li>
+                </ul>
+            </div>
+
+            <!-- Second Sub-section -->
+            <div style="background-color: #fff; flex: 1; min-width: 300px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <img src="images/2.PNG" alt="Logo 2" style="width:70px; height:60px; margin-right: 15px;">
+                    <h2 style="font-size: 20px; color: black; margin: 0;">Troubleshooting</h2>
+                </div>
+                <p style="font-size: 16px; color: #555; margin-bottom: 15px;">Resolve common printer issues</p>
+                <ul style="list-style: disc inside; padding-left: 0; color:#555;font-size:14px;">
+                    <li>Print Quality Issues
+</li>
+                    <li>Paper Jams
+</li>
+                    <li>Connectivity Problems</li>
+                    <li>Error Messages</li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+         <div style="display: flex; gap: 20px; flex-wrap: wrap;margin-top:25px;">
+            <!-- First Sub-section -->
+            <div style="background-color: #fff; flex: 1; min-width: 300px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <img src="images/3.PNG" alt="Logo 1" style="width:70px; height:60px; margin-right: 15px;">
+                    <h2 style="font-size: 20px; color:black; margin: 0;">Shipping & Delivery</h2>
+                </div>
+                <p style="font-size: 16px; color: #555; margin-bottom: 15px;">Track orders and shipping information</p>
+                <ul style="list-style: disc inside; padding-left: 0; color:#555;font-size:14px;">
+                    <li>Order Status</li>
+                    <li>Shipping Options</li>
+                    <li>Delivery Issues</li>
+                    <li>International Shipping</li>
+                    
+                </ul>
+            </div>
+
+          
+            <div style="background-color: #fff; flex: 1; min-width: 300px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <img src="images/4.PNG" alt="Logo 2" style="width:70px; height:60px; margin-right: 15px;">
+                    <h2 style="font-size: 20px; color: black; margin: 0;">Returns & Refunds</h2>
+                </div>
+                <p style="font-size: 16px; color: #555; margin-bottom: 15px;">Return policy and refund process</p>
+                <ul style="list-style: disc inside; padding-left: 0; color:#555;font-size:14px;">
+                    <li>Return Process</li>
+                    <li>Return Process</li>
+                    <li>Exchange Options</li>
+                    <li>Warranty Claims</li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section style="max-width: 800px; margin: 50px auto; padding: 20px; background-color: #fff; border-radius: 10px; ">
+    <h1 style="text-align: center; font-size: 26px; color: black; margin-bottom: 30px;">Frequently Asked Questions </h1>
+
+    <div style="text-align:center; margin-bottom: 30px;">
+        <input type="text" id="faqSearch" placeholder="Search FAQs.." 
+            style="width: 80%; max-width: 400px; padding: 12px 15px; font-size: 16px; border-radius: 25px; border: 1px solid #ccc; outline:none;">
+    </div>
+
+
+    <div id="faqList">
+
+        <div style="margin-bottom: 15px; cursor:pointer; border-radius:10px; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div onclick="toggleAnswer(this)" 
+                 style="font-weight: bold; padding: 15px; background-color: #f9f9f9; display:flex; justify-content: space-between; align-items: center; transition: background 0.3s;">
+                <span>How do I set up my new printer?</span>
+                <span style="font-weight: bold;">&gt;</span>
+            </div>
+            <div style="display:none; padding:15px; color:#555; background-color:#fff; border-top:1px solid #eee;">Setting up your printer is easy! First, unpack your printer and remove all protective materials. Connect the power cable and turn on the printer. Install ink cartridges or toner as instructed in the manual. Download the latest drivers from our support section or the manufacturer's website. Connect via USB or follow the wireless setup guide. Run a test print to ensure everything is working correctly.</div>
+        </div>
+
+        <div style="margin-bottom: 15px; cursor:pointer; border-radius:10px; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div onclick="toggleAnswer(this)" 
+                 style="font-weight: bold; padding: 15px; background-color: #f9f9f9; display:flex; justify-content: space-between; align-items: center; transition: background 0.3s;">
+                <span>What's included in the warrantly?</span>
+                <span style="font-weight: bold;">&gt;</span>
+            </div>
+            <div style="display:none; padding:15px; color:#555; background-color:#fff; border-top:1px solid #eee;">All our printers come with the manufacturer's standard warranty, typically 1-2 years depending on the model. The warranty covers manufacturing defects, hardware failures, and parts replacement. It does not cover consumables like ink or toner, damage from misuse, or normal wear and tear. We also provide warranty registration assistance and will help coordinate any warranty claims with the manufacturer.</div>
+        </div>
+
+        <div style="margin-bottom: 15px; cursor:pointer; border-radius:10px; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div onclick="toggleAnswer(this)" 
+                 style="font-weight: bold; padding: 15px; background-color: #f9f9f9; display:flex; justify-content: space-between; align-items: center; transition: background 0.3s;">
+                <span>How do I troubleshoot printing issues?</span>
+                <span style="font-weight: bold;">&gt;</span>
+            </div>
+            <div style="display:none; padding:15px; color:#555; background-color:#fff; border-top:1px solid #eee;">Common printing issues can often be resolved with these steps: 1) Check that the printer is powered on and connected, 2) Ensure there's paper in the tray and ink/toner is not empty, 3) Clear any paper jams, 4) Update or reinstall printer drivers, 5) Run the printer's built-in diagnostic tools, 6) Check print queue for stuck jobs. If issues persist, contact our technical support team.</div>
+        </div>
+
+        <div style="margin-bottom: 15px; cursor:pointer; border-radius:10px; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div onclick="toggleAnswer(this)" 
+                 style="font-weight: bold; padding: 15px; background-color: #f9f9f9; display:flex; justify-content: space-between; align-items: center; transition: background 0.3s;">
+                <span>What payment methods do you accept?</span>
+                <span style="font-weight: bold;">&gt;</span>
+            </div>
+            <div style="display:none; padding:15px; color:#555; background-color:#fff; border-top:1px solid #eee;">We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal, and business checks. For large orders, we also offer net payment terms for qualified business customers. All payments are processed securely through encrypted payment gateways.</div>
+        </div>
+
+        <div style="margin-bottom: 15px; cursor:pointer; border-radius:10px; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div onclick="toggleAnswer(this)" 
+                 style="font-weight: bold; padding: 15px; background-color: #f9f9f9; display:flex; justify-content: space-between; align-items: center; transition: background 0.3s;">
+                <span>How long does shipping take?</span>
+                <span style="font-weight: bold;">&gt;</span>
+            </div>
+            <div style="display:none; padding:15px; color:#555; background-color:#fff; border-top:1px solid #eee;">Standard shipping takes 3-7 business days. Expedited shipping (2-3 days) and overnight shipping are available for an additional fee. Orders placed before 2 PM EST on business days typically ship the same day. You'll receive tracking information via email once your order ships.</div>
+        </div>
+
+        <div style="margin-bottom: 15px; cursor:pointer; border-radius:10px; overflow:hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div onclick="toggleAnswer(this)" 
+                 style="font-weight: bold; padding: 15px; background-color: #f9f9f9; display:flex; justify-content: space-between; align-items: center; transition: background 0.3s;">
+                <span>Can I return a printer if I'm not satisfied?</span>
+                <span style="font-weight: bold;">&gt;</span>
+            </div>
+            <div style="display:none; padding:15px; color:#555; background-color:#fff; border-top:1px solid #eee;">Yes! We offer a 30-day money-back guarantee on all printers. Items must be in original condition with all packaging and accessories. Return shipping is free for defective items or our errors. For other returns, return shipping costs apply. Contact our customer service team to initiate a return and receive your RMA number.</div>
+        </div>
+
+    </section>
+   <section class="main-section">
+        <h1>Helpful Resources</h1>
+        
+
+        <div class="three-cards">
+            <div class="card">
+                <img src="images/7.PNG" alt="Image 1" style="height:60px;">
+                <h3>Driver Downloads</h3>
+                <p>Get the latest drivers for your printer model</p>
+                
+                <button style="background-color:#2563eb;">Download Drivers</button>
+                
+            </div>
+            <div class="card">
+                <img src="images/8.PNG" alt="Image 2"style="height:60px;">
+                <h3>Video Tutorials</h3>
+                <p >Watch step-by-step setup and troubleshooting videos</p>
+                
+               
+                <button style="background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));">Watch Videos</button>
+            </div>
+            <div class="card">
+                <img src="images/9.PNG" alt="Image 3"style="height:60px;">
+                <h3>User Manuals</h3>
+                <p >Access comprehensive user guides and manuals</p>
+                
+                <button >View Manuals</button>
+               
+            </div>
+        </div>
+    </section>
+  <section style="max-width: 1200px; margin: 50px auto; padding: 20px;">
+    <h1 style="text-align: center; font-size: 28px; color:black; margin-bottom: 10px;">Common Issues & Solutions</h1>
+    <p style="text-align:center; font-size:16px; color:#555; margin-bottom:25px;">Quick fixes for the most common printer problems</p>
+
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+
+      
+        <div style="background-color: #fff; flex: 1; min-width: 300px; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s; cursor:pointer;" 
+             onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0)';">
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <img src="images/a.PNG" alt="Logo 1" style="width:30px; height:30px; ">
+                <h2 style="font-size: 20px; color: black; margin: 0;    color: rgb(220 38 38 / var(--tw-text-opacity, 1));"> Printer Won't Print</h2>
+            </div>
+            <ol style="padding-left: 20px; color:#555;font-size:14px; line-height:1.6;">
+                <li>Check power and cable connections</li>
+                <li>Verify printer is set as default</li>
+                <li>Clear print queue</li>
+                <li>Restart printer and computer</li>
+                <li>Update or reinstall drivers</li>
+            </ol>
+        </div>
+
+
+        <div style="background-color: #fff; flex: 1; min-width: 300px; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s; cursor:pointer;" 
+             onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0)';">
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <img src="images/b.PNG" alt="Logo 2" style="width:30px; height:30px;">
+                <h2 style="font-size: 20px; color: black; margin: 0;    color: rgb(220 38 38 / var(--tw-text-opacity, 1));">Paper Jams</h2>
+            </div>
+
+           
+
+            
+            <ol style="padding-left: 20px; color:#555; font-size:14px; line-height:1.6;">
+                <li>Turn off printer and unplug</li>
+                <li>Remove paper tray</li>
+                <li>Gently remove jammed paper</li>
+                <li>Check for torn pieces</li>
+                <li>Reload paper properly</li>
+            </ol>
+
+         
+
+           
+        </div>
+
+    </div>
+
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top:25px;">
+
+     
+        <div style="background-color: #fff; flex: 1; min-width: 300px; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s; cursor:pointer;" 
+             onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0)';">
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <img src="images/c.PNG" alt="Logo 3" style="width:30px; height:30px; ">
+                <h2 style="font-size: 20px; color:black; margin: 0;color: rgb(37 99 235 / var(--tw-text-opacity, 1));">Poor Print Quality</h2>
+            </div>
+            <ol style="padding-left: 20px; color:#555;font-size:14px; line-height:1.6;">
+                <li>Check ink/toner levels</li>
+                <li>Clean print heads</li>
+                <li>Align print heads</li>
+                <li>Use correct paper type</li>
+                <li>Replace old cartridges</li>
+            </ol>
+        </div>
+
+
+        <div style="background-color: #fff; flex: 1; min-width: 300px; padding: 25px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s; cursor:pointer;" 
+             onmouseover="this.style.transform='translateY(-5px)';" onmouseout="this.style.transform='translateY(0)';">
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <img src="images/d.PNG" alt="Logo 4" style="width:30px; height:30px; ">
+                <h2 style="font-size: 20px; color: black;     color: rgb(22 163 74 / var(--tw-text-opacity, 1));">Connection Issues</h2>
+            </div>
+            <ol style="padding-left: 20px; color:#555;font-size:14px; line-height:1.6;">
+                <li>Check Wi-Fi connection</li>
+                <li>Restart router and printer</li>
+                <li>Re-run wireless setup</li>
+                <li>Update network drivers</li>
+                <li>Check firewall settings</li>
+            </ol>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="main-section">
+        <h1>Remote Support Services</h1>
+        <p>Get help without leaving your home or office</p>
+        
+
+        <div class="three-cards">
+            <div class="card">
+                <img src="images/Capture1.PNG" alt="Image 1" style="width:90px;height:90px;">
+                <h3>Screen Sharing</h3>
+                <p>Our technicians can access your computer to help with setup and troubleshooting</p>
+                
+                <button style="background-color:#2563eb;">Start Session</button>
+                
+            </div>
+            <div class="card">
+                <img src="images/Capture3.PNG" alt="Image 2"style="width:90px;height:90px;">
+                <h3>Email Diagnostics</h3>
+                <p >Send us error messages and screenshots for detailed troubleshooting help</p>
+                
+               
+                <button style="background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));">Send Details</Details></button>
+            </div>
+            <div class="card">
+                <img src="images/Capture2.PNG" alt="Image 3"style="width:90px;height:90px;">
+                <h3>Phone Guidance</h3>
+                <p >Step-by-step phone support to walk you through any printer issue</p>
+                
+                <button >Call Now</button>
+               
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="footer-top">
+        <div class="footer-about">
+            <h3>LaserShopPrinters</h3>
+            <p>Your trusted source for professional printers from all major brands. Serving businesses and individuals since 2010.</p>
+            <p><strong>Business License:</strong> #BL-2024-001</p>
+            <p><strong>Tax ID:</strong> 12-3456789</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Customer Service</h4>
+            <ul>
+                <li>Contact Us</li>
+                <li>Shipping Info</li>
+                <li>Returns</li>
+                <li>Warranty</li>
+            </ul>
+        </div>
+
+        <div class="footer-legal">
+            <h4>Legal</h4>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Refund Policy</li>
+                <li>Accessibility</li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p>🇺🇸 1-855-690-4040</p>
+            <p>support@printerhub.com</p>
+            <p>15 Lombard Street</p>
+            <p>The Crookedest Street</p>
+            <p>San Francisco, CA 94133</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024 LaserShopPrinters. All rights reserved. Microsoft Advertising Policy Compliant.</p>
+        <div class="footer-certifications">
+            <span>A+ BBB Accredited A+ Rating</span>
+            <span>256-bit SSL/TLS 1.3 Secured</span>
+            <span>PCI DSS Level 1 Compliant</span>
+            <span>Extended Validation Certificate</span>
+        </div>
+    </div>
+</footer>
+<script>
+   
+    function toggleAnswer(el) {
+        var answer = el.nextElementSibling;
+        if(answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
+        } else {
+            answer.style.display = "none";
+        }
+    }
+
+    
+    document.getElementById("faqSearch").addEventListener("keyup", function() {
+        var filter = this.value.toLowerCase();
+        var faqItems = document.getElementById("faqList").children;
+        for(var i=0; i<faqItems.length; i++){
+            var question = faqItems[i].children[0].innerText.toLowerCase();
+            var answer = faqItems[i].children[1].innerText.toLowerCase();
+            if(question.includes(filter) || answer.includes(filter)){
+                faqItems[i].style.display = "block";
+            } else {
+                faqItems[i].style.display = "none";
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
